@@ -8,6 +8,20 @@ export const defaultNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
+    },
+    {
+        id: 'home',
+        title: 'Home',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/home'
+    },
+    {
+        id: 'tasks',
+        title: 'Tasks',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/tasks'
     }
 ];
 export const compactNavigation: FuseNavigationItem[] = [

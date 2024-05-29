@@ -22,8 +22,8 @@ export const appRoutes: Route[] = [
     // Auth routes for guests
     {
         path: '',
-        canActivate: [NoAuthGuard],
-        canActivateChild: [NoAuthGuard],
+        canActivate: [],
+        canActivateChild: [],
         component: LayoutComponent,
         data: {
             layout: 'empty'
@@ -40,8 +40,8 @@ export const appRoutes: Route[] = [
     // Auth routes for authenticated users
     {
         path: '',
-        canActivate: [AuthGuard],
-        canActivateChild: [AuthGuard],
+        canActivate: [],
+        canActivateChild: [],
         component: LayoutComponent,
         data: {
             layout: 'empty'
@@ -59,22 +59,21 @@ export const appRoutes: Route[] = [
         data: {
             layout: 'empty'
         },
-        children: [
-            {path: 'home', loadChildren: () => import('app/modules/landing/home/home.routes')},
-        ]
+        children: []
     },
 
     // Admin routes
     {
         path: '',
-        canActivate: [AuthGuard],
-        canActivateChild: [AuthGuard],
+        canActivate: [],
+        canActivateChild: [],
         component: LayoutComponent,
         resolve: {
             initialData: initialDataResolver
         },
         children: [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.routes')},
+            {path: 'home', loadChildren: () => import('app/modules/home/home.routes')}
         ]
     }
 ];
