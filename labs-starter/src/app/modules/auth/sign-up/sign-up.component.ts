@@ -53,8 +53,9 @@ export class AuthSignUpComponent implements OnInit
     {
         // Create the form
         this.signUpForm = this._formBuilder.group({
+                username:   ['', [Validators.required]],
                 email     : ['', [Validators.required, Validators.email]],
-                password  : ['', Validators.required],
+                PasswordHash  : ['', Validators.required],
             },
         );
     }
@@ -79,7 +80,7 @@ export class AuthSignUpComponent implements OnInit
 
         // Hide the alert
         this.showAlert = false;
-        console.log(this.signUpForm, 'form')
+        console.log(this.signUpForm.value, 'form value')
         // Sign up
         this._authService.signUp(this.signUpForm.value)
             .subscribe(
@@ -94,7 +95,7 @@ export class AuthSignUpComponent implements OnInit
                     this.signUpForm.enable();
 
                     // Reset the form
-                    this.signUpNgForm.resetForm();
+                   // this.signUpNgForm.resetForm();
 
                     // Set the alert
                     this.alert = {

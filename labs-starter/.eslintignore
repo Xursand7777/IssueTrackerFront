@@ -1,0 +1,8 @@
+projects/**
+@fuse/**
+core/**
+layout/**
+mock-api/**
+modules/admin/**
+modules/auth/**
+modules/landing/**
