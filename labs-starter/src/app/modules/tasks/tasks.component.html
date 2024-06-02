@@ -1,0 +1,319 @@
+<div class="p-10">
+    <div class="wrapper">
+        <div class="todo">
+            <div class="flex justify-between">
+                <h1 class="text-2xl uppercase">Todo</h1>
+                <button (click)="addTodoToColumn()" class="add__todo">
+                    <img class="add__todo-svg" width="32" height="32" ngSrc="assets/icons/add.svg" alt="AddTodo">
+                </button>
+            </div>
+
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--primary"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--secondary"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+        </div>
+        <div class="doing">
+            <h1 class="text-2xl uppercase">Doing</h1>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+        </div>
+        <div class="done">
+            <h1 class="text-2xl uppercase">Done</h1>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+            <div class="task task--offset">
+                <div class="task__description">
+                    <div class="task__description-wrapper">
+                        <span class="task__description-id">Task: DE-1234</span>
+                        <button class="task__description-wrapper-btn">
+                            <img class="task__description-edit" width="24" height="24" ngSrc="assets/icons/edit.svg" alt="ConfigTodo">
+                        </button>
+                    </div>
+                    <div class="task__description-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="task__description-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="deadline__wrapper">
+                        <div class="deadline__info">
+                            <span class="deadline">DeadLine</span>
+                            <span class="deadline__date">22 March</span>
+                        </div>
+                        <button class="view__todo-btn">
+                            <img class="view__todo" ngSrc="assets/icons/eye.svg" width="24" height="24" alt="ViewTodo">
+                        </button>
+                    </div>
+                </div>
+                <div class="task__indicator task__indicator--outline"></div>
+            </div>
+        </div>
+    </div>
+</div>

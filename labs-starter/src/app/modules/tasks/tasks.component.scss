@@ -1,0 +1,158 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 391px 391px 391px;
+    grid-gap: 52px;
+}
+
+.todo {
+    padding: 10px;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.doing {
+    padding: 10px;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.done {
+    padding: 10px;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.add__todo {
+    width: 32px;
+    height: 32px;
+    background-color: #FC6D27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.add__todo-svg {
+    width: 14px;
+    height: 27px;
+}
+
+.task {
+    display: flex;
+    cursor: grab;
+}
+
+.task--offset {
+    margin-bottom: 27px;
+}
+
+
+.task__description {
+    width: 301px;
+    height: 230px;
+    border-radius: 10px;
+    border: 1px solid #C2C2C2;
+    padding: 10px;
+}
+
+.task__description-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__description-id {
+
+}
+
+.task__description-edit {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.task__description-wrapper-btn {
+
+}
+
+.task__description-main-text {
+
+}
+
+.task__description-center-text {
+
+}
+
+.deadline__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deadline__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.deadline {
+
+}
+
+.deadline__date {
+
+}
+
+.view__todo-btn {
+
+}
+
+.view__todo {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+
+
+
+
+.task__indicator {
+    width: 50px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.task__indicator--primary {
+    background: linear-gradient(to top, #FF2300 80%, white 20%);
+}
+
+.task__indicator--secondary {
+    background: linear-gradient(to top, #F0CB0A 80%, white 20%);
+}
+
+.task__indicator--outline {
+    background: linear-gradient(to top, #54F00A 80%, white 20%);
+}
+
+.task__indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 0 0 50% 50%;
+}
+

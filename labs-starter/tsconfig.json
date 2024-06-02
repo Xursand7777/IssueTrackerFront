@@ -17,7 +17,17 @@
         "lib": [
             "ES2022",
             "dom"
-        ]
+        ],
+        //"strict": true,
+        //"noImplicitAny": true,
+        //"strictNullChecks": true,
+        //"strictPropertyInitialization": true,
+        //"noUnusedLocals": true,
+        //"noUnusedParameters": true,
+        //"noImplicitReturns": true,
+        //"noFallthroughCasesInSwitch": true,
+        "incremental": true,
+        "skipLibCheck": true
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false

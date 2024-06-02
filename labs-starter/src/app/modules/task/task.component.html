@@ -1,0 +1,47 @@
+<div class="p-10 w-full">
+    <h1 class="text-bold text-3xl">Add new Task</h1>
+    <div class="p-10">
+        <ng-form [formGroup]="taskGroup" class="flex flex-col" *ngIf="showTask">
+            <mat-form-field appearance="fill">
+                <mat-label>Task Title</mat-label>
+                <input formControlName="title" matInput type="text" value="Test Messsage">
+            </mat-form-field>
+
+            <mat-form-field  appearance="fill">
+                <mat-label>Address</mat-label>
+                <textarea formControlName="description" matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+            </mat-form-field>
+
+            <div class="flex justify-between">
+                <mat-form-field appearance="fill" class="datepicker">
+                    <mat-label>Choose a date</mat-label>
+                    <input formControlName="endDate" matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="assigned__person">
+                    <mat-label>Assigned to</mat-label>
+                    <mat-select formControlName="assignee">
+                        <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="severity">
+                    <mat-label>Task Category</mat-label>
+                    <mat-select formControlName="category">
+                        <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </ng-form>
+
+        <button class="create__task" (click)="onAddTask()">Create Task</button>
+    </div>
+
+</div>

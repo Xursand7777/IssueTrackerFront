@@ -4,6 +4,11 @@
     margin-bottom: 56px;
 }
 
+.recent {
+    display: flex;
+    gap: 26px;
+}
+
 .header__left {
 
 }
@@ -83,10 +88,29 @@
     gap: 30px;
 }
 
-.approaching__deadline-task {
+.approaching__deadline--offset {
+    margin-bottom: 35px;
+}
+
+.task {
     display: flex;
 }
 
+.approaching__deadline-title  {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    color: #000000 !important;
+    margin-bottom: 5px !important;
+}
+
+.recent__task-title {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    color: #000000 !important;
+    margin-bottom: 5px !important;
+}
 
 
 .task__description {

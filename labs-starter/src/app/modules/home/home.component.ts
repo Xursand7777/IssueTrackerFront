@@ -1,4 +1,6 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, inject, OnInit} from "@angular/core";
+import {Router} from "@angular/router";
+
 
 @Component({
     selector: "app-home",
@@ -8,8 +10,16 @@ import {Component, OnInit} from "@angular/core";
 })
 export class HomeComponent implements OnInit {
 
+    private _router: Router = inject(Router);
 
     ngOnInit(): void {
     }
 
+    addNewTask() {
+        this._router.navigate(['/task'])
+    }
+
+    viewAllTasks() {
+        this._router.navigate(['/tasks'])
+    }
 }
